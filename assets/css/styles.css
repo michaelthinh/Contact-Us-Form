@@ -37,6 +37,7 @@
     padding: 6px;
     border-radius: 10px;
     background: #fff;
+    display: flex;
   }
   
   /* ------------------------------------------------ Heading ------------------------------------------------ */
@@ -144,3 +145,57 @@
     background: var(--secondary-color);
   }
   
+  /* ------------------------------------------------ Contact Form ------------------------------------------------*/
+  
+  .contact-form{
+    padding:28px 32px;
+    flex-grow: 1;
+  }
+
+.form-row{
+    display: flex;
+    column-gap: 32px;
+    margin-bottom: 30px;
+}
+
+.form-group{
+    flex-grow: 1;
+}
+
+.form-group:focus-within .form-label{
+    color:#5F42B6;
+}
+
+.form-group:focus-within .form-input{
+    border-color:#5F42B6;
+}
+
+.form-label,.form-input{
+    display: block;
+}
+
+.form-label{
+    font-size:1.1rem;
+    font-weight: 700;
+    color:#131434;
+    transition: ease 0.5s;
+}
+
+.form-input{
+    width: 100%;
+    outline:none;
+    border:none;
+    border-bottom: 2px solid #E3E3E9;
+    padding: 8px 0 14px;
+    color: #0D0D3B;
+    transition: ease 0.5s;
+}
+
+.form-input::placeholder{
+    color:#BEBFC9;
+}
+
+.form-error{
+    display: none;
+}
+
